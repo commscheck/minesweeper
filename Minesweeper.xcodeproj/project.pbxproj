@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B56157F81C1D3887009337A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56157F71C1D3887009337A2 /* AppDelegate.swift */; };
+		B56157FA1C1D3887009337A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56157F91C1D3887009337A2 /* ViewController.swift */; };
+		B56157FD1C1D3887009337A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56157FB1C1D3887009337A2 /* Main.storyboard */; };
+		B56157FF1C1D3887009337A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56157FE1C1D3887009337A2 /* Assets.xcassets */; };
+		B56158021C1D3887009337A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56158001C1D3887009337A2 /* LaunchScreen.storyboard */; };
+		B561580D1C1D3887009337A2 /* MinesweeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B561580C1C1D3887009337A2 /* MinesweeperTests.swift */; };
+		B56158181C1D3887009337A2 /* MinesweeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56158171C1D3887009337A2 /* MinesweeperUITests.swift */; };
+		B5685C7B1C1D3A1100EC50B8 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5685C7A1C1D3A1100EC50B8 /* GameBoard.swift */; };
+		B5685C7D1C1D3A2D00EC50B8 /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5685C7C1C1D3A2D00EC50B8 /* BoardCell.swift */; };
+		B5685C801C1D459300EC50B8 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5685C7F1C1D459300EC50B8 /* GameController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B56158091C1D3887009337A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56157EC1C1D3887009337A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B56157F31C1D3887009337A2;
+			remoteInfo = Minesweeper;
+		};
+		B56158141C1D3887009337A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56157EC1C1D3887009337A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B56157F31C1D3887009337A2;
+			remoteInfo = Minesweeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B56157F41C1D3887009337A2 /* Minesweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minesweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56157F71C1D3887009337A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B56157F91C1D3887009337A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B56157FC1C1D3887009337A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B56157FE1C1D3887009337A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B56158011C1D3887009337A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B56158031C1D3887009337A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B56158081C1D3887009337A2 /* MinesweeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinesweeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B561580C1C1D3887009337A2 /* MinesweeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweeperTests.swift; sourceTree = "<group>"; };
+		B561580E1C1D3887009337A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B56158131C1D3887009337A2 /* MinesweeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinesweeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56158171C1D3887009337A2 /* MinesweeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinesweeperUITests.swift; sourceTree = "<group>"; };
+		B56158191C1D3887009337A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5685C7A1C1D3A1100EC50B8 /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameBoard.swift; path = Models/GameBoard.swift; sourceTree = "<group>"; };
+		B5685C7C1C1D3A2D00EC50B8 /* BoardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardCell.swift; path = Models/BoardCell.swift; sourceTree = "<group>"; };
+		B5685C7F1C1D459300EC50B8 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameController.swift; path = Controllers/GameController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B56157F11C1D3887009337A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56158051C1D3887009337A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56158101C1D3887009337A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B56157EB1C1D3887009337A2 = {
+			isa = PBXGroup;
+			children = (
+				B56157F61C1D3887009337A2 /* Minesweeper */,
+				B561580B1C1D3887009337A2 /* MinesweeperTests */,
+				B56158161C1D3887009337A2 /* MinesweeperUITests */,
+				B56157F51C1D3887009337A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B56157F51C1D3887009337A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56157F41C1D3887009337A2 /* Minesweeper.app */,
+				B56158081C1D3887009337A2 /* MinesweeperTests.xctest */,
+				B56158131C1D3887009337A2 /* MinesweeperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B56157F61C1D3887009337A2 /* Minesweeper */ = {
+			isa = PBXGroup;
+			children = (
+				B5685C7E1C1D457700EC50B8 /* Controllers */,
+				B5685C791C1D39EA00EC50B8 /* Models */,
+				B56157F71C1D3887009337A2 /* AppDelegate.swift */,
+				B56157F91C1D3887009337A2 /* ViewController.swift */,
+				B56157FB1C1D3887009337A2 /* Main.storyboard */,
+				B56157FE1C1D3887009337A2 /* Assets.xcassets */,
+				B56158001C1D3887009337A2 /* LaunchScreen.storyboard */,
+				B56158031C1D3887009337A2 /* Info.plist */,
+			);
+			path = Minesweeper;
+			sourceTree = "<group>";
+		};
+		B561580B1C1D3887009337A2 /* MinesweeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				B561580C1C1D3887009337A2 /* MinesweeperTests.swift */,
+				B561580E1C1D3887009337A2 /* Info.plist */,
+			);
+			path = MinesweeperTests;
+			sourceTree = "<group>";
+		};
+		B56158161C1D3887009337A2 /* MinesweeperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B56158171C1D3887009337A2 /* MinesweeperUITests.swift */,
+				B56158191C1D3887009337A2 /* Info.plist */,
+			);
+			path = MinesweeperUITests;
+			sourceTree = "<group>";
+		};
+		B5685C791C1D39EA00EC50B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5685C7A1C1D3A1100EC50B8 /* GameBoard.swift */,
+				B5685C7C1C1D3A2D00EC50B8 /* BoardCell.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B5685C7E1C1D457700EC50B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5685C7F1C1D459300EC50B8 /* GameController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B56157F31C1D3887009337A2 /* Minesweeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B561581C1C1D3887009337A2 /* Build configuration list for PBXNativeTarget "Minesweeper" */;
+			buildPhases = (
+				B56157F01C1D3887009337A2 /* Sources */,
+				B56157F11C1D3887009337A2 /* Frameworks */,
+				B56157F21C1D3887009337A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Minesweeper;
+			productName = Minesweeper;
+			productReference = B56157F41C1D3887009337A2 /* Minesweeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B56158071C1D3887009337A2 /* MinesweeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B561581F1C1D3887009337A2 /* Build configuration list for PBXNativeTarget "MinesweeperTests" */;
+			buildPhases = (
+				B56158041C1D3887009337A2 /* Sources */,
+				B56158051C1D3887009337A2 /* Frameworks */,
+				B56158061C1D3887009337A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B561580A1C1D3887009337A2 /* PBXTargetDependency */,
+			);
+			name = MinesweeperTests;
+			productName = MinesweeperTests;
+			productReference = B56158081C1D3887009337A2 /* MinesweeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B56158121C1D3887009337A2 /* MinesweeperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56158221C1D3887009337A2 /* Build configuration list for PBXNativeTarget "MinesweeperUITests" */;
+			buildPhases = (
+				B561580F1C1D3887009337A2 /* Sources */,
+				B56158101C1D3887009337A2 /* Frameworks */,
+				B56158111C1D3887009337A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B56158151C1D3887009337A2 /* PBXTargetDependency */,
+			);
+			name = MinesweeperUITests;
+			productName = MinesweeperUITests;
+			productReference = B56158131C1D3887009337A2 /* MinesweeperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B56157EC1C1D3887009337A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Benjamin Lea";
+				TargetAttributes = {
+					B56157F31C1D3887009337A2 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 2Y6AJ3K5UE;
+					};
+					B56158071C1D3887009337A2 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 2Y6AJ3K5UE;
+						TestTargetID = B56157F31C1D3887009337A2;
+					};
+					B56158121C1D3887009337A2 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 2Y6AJ3K5UE;
+						TestTargetID = B56157F31C1D3887009337A2;
+					};
+				};
+			};
+			buildConfigurationList = B56157EF1C1D3887009337A2 /* Build configuration list for PBXProject "Minesweeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B56157EB1C1D3887009337A2;
+			productRefGroup = B56157F51C1D3887009337A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B56157F31C1D3887009337A2 /* Minesweeper */,
+				B56158071C1D3887009337A2 /* MinesweeperTests */,
+				B56158121C1D3887009337A2 /* MinesweeperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B56157F21C1D3887009337A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56158021C1D3887009337A2 /* LaunchScreen.storyboard in Resources */,
+				B56157FF1C1D3887009337A2 /* Assets.xcassets in Resources */,
+				B56157FD1C1D3887009337A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56158061C1D3887009337A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56158111C1D3887009337A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B56157F01C1D3887009337A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56157FA1C1D3887009337A2 /* ViewController.swift in Sources */,
+				B5685C801C1D459300EC50B8 /* GameController.swift in Sources */,
+				B5685C7B1C1D3A1100EC50B8 /* GameBoard.swift in Sources */,
+				B5685C7D1C1D3A2D00EC50B8 /* BoardCell.swift in Sources */,
+				B56157F81C1D3887009337A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B56158041C1D3887009337A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B561580D1C1D3887009337A2 /* MinesweeperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B561580F1C1D3887009337A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56158181C1D3887009337A2 /* MinesweeperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B561580A1C1D3887009337A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B56157F31C1D3887009337A2 /* Minesweeper */;
+			targetProxy = B56158091C1D3887009337A2 /* PBXContainerItemProxy */;
+		};
+		B56158151C1D3887009337A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B56157F31C1D3887009337A2 /* Minesweeper */;
+			targetProxy = B56158141C1D3887009337A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B56157FB1C1D3887009337A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56157FC1C1D3887009337A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B56158001C1D3887009337A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56158011C1D3887009337A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B561581A1C1D3887009337A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B561581B1C1D3887009337A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B561581D1C1D3887009337A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Minesweeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.commscheck.Minesweeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B561581E1C1D3887009337A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Minesweeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.commscheck.Minesweeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B56158201C1D3887009337A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MinesweeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.commscheck.MinesweeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minesweeper.app/Minesweeper";
+			};
+			name = Debug;
+		};
+		B56158211C1D3887009337A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MinesweeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.commscheck.MinesweeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minesweeper.app/Minesweeper";
+			};
+			name = Release;
+		};
+		B56158231C1D3887009337A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MinesweeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.commscheck.MinesweeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Minesweeper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B56158241C1D3887009337A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MinesweeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.commscheck.MinesweeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Minesweeper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B56157EF1C1D3887009337A2 /* Build configuration list for PBXProject "Minesweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B561581A1C1D3887009337A2 /* Debug */,
+				B561581B1C1D3887009337A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B561581C1C1D3887009337A2 /* Build configuration list for PBXNativeTarget "Minesweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B561581D1C1D3887009337A2 /* Debug */,
+				B561581E1C1D3887009337A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B561581F1C1D3887009337A2 /* Build configuration list for PBXNativeTarget "MinesweeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56158201C1D3887009337A2 /* Debug */,
+				B56158211C1D3887009337A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B56158221C1D3887009337A2 /* Build configuration list for PBXNativeTarget "MinesweeperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56158231C1D3887009337A2 /* Debug */,
+				B56158241C1D3887009337A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B56157EC1C1D3887009337A2 /* Project object */;
+}
