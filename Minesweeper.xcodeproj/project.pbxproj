@@ -17,6 +17,7 @@
 		B5685C7B1C1D3A1100EC50B8 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5685C7A1C1D3A1100EC50B8 /* GameBoard.swift */; };
 		B5685C7D1C1D3A2D00EC50B8 /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5685C7C1C1D3A2D00EC50B8 /* BoardCell.swift */; };
 		B5685C801C1D459300EC50B8 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5685C7F1C1D459300EC50B8 /* GameController.swift */; };
+		B5685C821C1D539400EC50B8 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5685C811C1D539400EC50B8 /* Coordinate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B5685C7A1C1D3A1100EC50B8 /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameBoard.swift; path = Models/GameBoard.swift; sourceTree = "<group>"; };
 		B5685C7C1C1D3A2D00EC50B8 /* BoardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardCell.swift; path = Models/BoardCell.swift; sourceTree = "<group>"; };
 		B5685C7F1C1D459300EC50B8 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameController.swift; path = Controllers/GameController.swift; sourceTree = "<group>"; };
+		B5685C811C1D539400EC50B8 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinate.swift; path = Models/Coordinate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				B5685C7A1C1D3A1100EC50B8 /* GameBoard.swift */,
 				B5685C7C1C1D3A2D00EC50B8 /* BoardCell.swift */,
+				B5685C811C1D539400EC50B8 /* Coordinate.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				B5685C7B1C1D3A1100EC50B8 /* GameBoard.swift in Sources */,
 				B5685C7D1C1D3A2D00EC50B8 /* BoardCell.swift in Sources */,
 				B56157F81C1D3887009337A2 /* AppDelegate.swift in Sources */,
+				B5685C821C1D539400EC50B8 /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

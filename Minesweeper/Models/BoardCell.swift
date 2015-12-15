@@ -8,7 +8,20 @@
 
 import Foundation
 
+enum CellValue: Equatable {
+  case Bomb
+  case Empty(neighbours: UInt)
+}
+
+func ==(a: CellValue, b: CellValue) -> Bool {
+  switch (a, b) {
+  case (.Bomb, .Bomb): return true
+  case (.Empty(let a), .Empty(let b)) where a == b: return true
+  default: return false
+  }
+}
+
 struct BoardCell {
   var revealed = false
-  var hasBomb = false
+  var value: CellValue
 }
