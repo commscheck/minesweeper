@@ -24,4 +24,13 @@ func ==(a: CellValue, b: CellValue) -> Bool {
 struct BoardCell {
   var revealed = false
   var value: CellValue
+
+  mutating func incrementNeighbourCount() {
+    switch self.value {
+    case let .Empty(neighbours):
+      self.value = .Empty(neighbours: neighbours + 1)
+    default:
+      break
+    }
+  }
 }

@@ -16,11 +16,16 @@ class GameController {
   }
 
   func revealCellAt(location: Coordinate) {
-    assert(location.x >= 0 && location.x < board.width,
-      "x parameter must be within range of board")
-    assert(location.y >= 0 && location.y < board.height,
-      "y parameter must be within range of board")
+    if var cell: BoardCell = self.board.cellAt(location) {
+      cell.revealed = true
+      self.board.setCell(cell, coordinate: location)
 
-    board.grid[location.x][location.y].revealed = true
+      switch cell.value {
+      case .Empty(neighbours: 0):
+        break
+      default:
+        break
+      }
+    }
   }
 }

@@ -50,24 +50,40 @@ struct GameBoard {
       }
       newGrid.append(column)
     }
+    self.grid = newGrid
 
     for y in 0..<height {
       for x in 0..<width where newGrid[x][y].value == CellValue.Bomb {
-        for neighbourY in (y - 1)...(y + 1) where neighbourY >= 0 && neighbourY < height {
-          for neighbourX in (x - 1)...(x + 1) where neighbourX >= 0 && neighbourX < width {
-            if !(x == neighbourX && y == neighbourY) {
-              switch newGrid[neighbourX][neighbourY].value {
-              case let .Empty(neighbours):
-                newGrid[neighbourX][neighbourY].value = .Empty(neighbours: neighbours + 1)
-              default:
-                break
-              }
-            }
-          }
+        self.enumerateNeighbours(Coordinate(x, y), operation: { (var cell) in
+          cell.incrementNeighbourCount()
+          return cell
+        })
+      }
+    }
+  }
+
+  func cellAt(coordinate: Coordinate) -> BoardCell {
+    assert(coordinate.x >= 0 && coordinate.x < self.width,
+      "x parameter must be within range of board")
+    assert(coordinate.y >= 0 && coordinate.y < self.height,
+      "y parameter must be within range of board")
+
+    return self.grid[coordinate.x][coordinate.y]
+  }
+
+  mutating func enumerateNeighbours(coordinate: Coordinate, operation: (BoardCell) -> BoardCell) {
+    for y in (coordinate.y - 1)...(coordinate.y + 1) where y >= 0 && y < self.height {
+      for x in (coordinate.x - 1)...(coordinate.x + 1) where x >= 0 && x < self.width {
+        if !(x == coordinate.x && y == coordinate.y) {
+          let cell = operation(self.cellAt(Coordinate(x, y)))
+          self.setCell(cell, coordinate: Coordinate(x, y))
         }
       }
     }
-    self.grid = newGrid
+  }
+
+  mutating func setCell(cell: BoardCell, coordinate: Coordinate) {
+    self.grid[coordinate.x][coordinate.y] = cell
   }
 
   func printToConsole() {
