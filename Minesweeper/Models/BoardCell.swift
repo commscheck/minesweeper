@@ -22,6 +22,7 @@ func ==(a: CellValue, b: CellValue) -> Bool {
 }
 
 struct BoardCell {
+  let coordinate: Coordinate
   var revealed = false
   var value: CellValue
 

@@ -46,7 +46,7 @@ struct GameBoard {
         else {
           value = CellValue.Empty(neighbours: 0)
         }
-        column.append(BoardCell(revealed: false, value: value))
+        column.append(BoardCell(coordinate: Coordinate(x, y), revealed: false, value: value))
       }
       newGrid.append(column)
     }
@@ -71,6 +71,16 @@ struct GameBoard {
     return self.grid[coordinate.x][coordinate.y]
   }
 
+  func accessNeighbours(coordinate: Coordinate, operation: (BoardCell) -> Void) {
+    for y in (coordinate.y - 1)...(coordinate.y + 1) where y >= 0 && y < self.height {
+      for x in (coordinate.x - 1)...(coordinate.x + 1) where x >= 0 && x < self.width {
+        if !(x == coordinate.x && y == coordinate.y) {
+          operation(self.cellAt(Coordinate(x, y)))
+        }
+      }
+    }
+  }
+
   mutating func enumerateNeighbours(coordinate: Coordinate, operation: (BoardCell) -> BoardCell) {
     for y in (coordinate.y - 1)...(coordinate.y + 1) where y >= 0 && y < self.height {
       for x in (coordinate.x - 1)...(coordinate.x + 1) where x >= 0 && x < self.width {
@@ -86,19 +96,50 @@ struct GameBoard {
     self.grid[coordinate.x][coordinate.y] = cell
   }
 
-  func printToConsole() {
+  func revealedPrintToConsole() {
     for y in (0..<height).reverse() {
       for x in 0..<width {
-        switch self.grid[x][y].value {
+        let cell = self.grid[x][y]
+        switch cell.value {
         case .Bomb:
           print("* ", terminator: "")
         case let .Empty(neighbours):
-          switch neighbours {
-          case 0:
-            print(". ", terminator: "")
-          default:
+          if neighbours == 0 {
+            if cell.revealed {
+              print("  ", terminator: "")
+            }
+            else {
+              print(". ", terminator: "")
+            }
+          }
+          else {
             print("\(neighbours) ", terminator: "")
           }
+        }
+      }
+      print("")
+    }
+  }
+
+  func hiddenPrintToConsole() {
+    for y in (0..<height).reverse() {
+      for x in 0..<width {
+        let cell = self.grid[x][y]
+        if cell.revealed {
+          switch cell.value {
+          case let .Empty(neighbours):
+            if neighbours > 0 {
+              print("\(neighbours) ", terminator: "")
+            }
+            else {
+              print("  ", terminator: "")
+            }
+          case .Bomb:
+            print("* ", terminator: "")
+          }
+        }
+        else {
+          print(". ", terminator: "")
         }
       }
       print("")

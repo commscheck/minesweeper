@@ -16,10 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
-
-    let board = GameBoard(width: 30, height: 20, bombs: 30)
-    board.printToConsole()
-
     return true
   }
 
